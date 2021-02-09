@@ -1,0 +1,40 @@
+*{border:1px solid black;}
+body,html{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template: 1fr 9fr / 1fr;
+    grid-template-areas: 'header'
+                         'section';
+    height: 100%;
+}
+#header{
+    grid-area: header;
+    height: 100%;
+}
+#header_zone{
+    box-sizing: border-box;
+    padding: 30px 20px;
+    height: 100%;
+}
+#section{
+    height: 100%;
+    grid-area: section;
+}
+#section_zone{
+    box-sizing: border-box;
+    padding: 30px 40px;
+    height: 100%;
+}
+button{
+    height: 60px;
+    width:100px;
+    margin: 0 5px 5px 0;
+    border:1px solid indianred;
+    background-color: aliceblue;
+    
+}
+#section_zone button.hide{
+    display: none;
+}
